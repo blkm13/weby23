@@ -1,0 +1,26 @@
+<script src="api/fetchingAPI.js"></script>
+<script src="api/utilities.js"></script>
+<script src="api/logicOfAddingCity.js"></script>
+<script src="api/getCurLocation.js"></script>
+
+<script>
+    let form = document.getElementById("favorite-input")
+    form.addEventListener("submit", function (event){
+        parseCity()
+        event.preventDefault()
+    })
+</script>
+
+<script>
+    let btn_big = document.getElementById("update_location_big")
+    btn_big.addEventListener("click", function (event){
+        updateLocation()
+        event.preventDefault()
+    })
+
+    let btn_small = document.getElementById("update_location_small")
+    btn_small.addEventListener("click", function (event){
+        updateLocation()
+        event.preventDefault()
+    })
+</script>
